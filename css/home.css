@@ -1,0 +1,262 @@
+h2 {
+    font-weight: bold;
+}
+
+h2, h3 {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.home-jumbotron-en {
+    position: relative;
+    background: #000 url("/images/site/home/2019-09-10_home_header_en.jpg") top center;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 40%;
+    background-repeat: no-repeat;
+}
+
+.home-jumbotron-es {
+    position: relative;
+    background: #000 url("/images/site/home/homepage_header_sp_2019-04.jpg") top center;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 30%;
+    background-repeat: no-repeat;
+}
+    .home-jumbotron__text-en {
+        color: white;
+        font-size: 2.0rem;
+        font-weight: 600;
+        text-align: center;
+        display:none;
+    }
+
+    .home-jumbotron__text-es {
+        color: white;
+        font-size: 2.0rem;
+        font-weight: 600;
+        text-align: center;
+        display:none;
+    }
+    .home-jumbotron__text-en p {        
+        background-color: rgba(65, 176, 226, 0.9);
+        display: flex;
+        padding: 1rem .8rem;
+        display:none;
+    }
+    .home-jumbotron__text-es p {        
+        background-color: rgba(65, 176, 226, 0.9);
+        display: flex;
+        padding: 1rem 1.5rem;
+        display:none;
+    }    
+
+section.home-welcome-en {
+    /*
+    background: white url("/images/site/home/vlcff_student_en_2018-11-01-1.jpg") no-repeat right;
+    background-size: contain;
+    min-height: 420px;
+    */
+}
+div.welcome-image {
+    background: white url("/images/site/home/20190917_vlcff_student.jpg") no-repeat top right;
+    background-size: cover;
+    min-height: 500px; 
+}
+
+section.home-welcome-es {
+    background: white url("/images/site/home/vlcff_student_female_young_fade.jpg") no-repeat top right;
+    background-size: contain;
+    height: 420px;
+}
+
+section.home-mission-en {/*
+    background-image: url("/images/site/home/home-mission-en-2018-11.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, right;
+    background-size: contain, 60% 100%;
+    height: 400px;*/
+}
+div.mission-image {
+    background: white url("/images/site/home/home-mission-en-2018-11.jpg") no-repeat top center;
+    background-size: cover;
+    min-height: 400px; 
+}
+section.home-mission-es {
+    background-image: url("/images/site/home/vlcff_certificate_students_puerto_escondido_fade.jpg"), linear-gradient(to right, #ffffff, #f1f1f1);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, right;
+    background-size: contain, 60% 100%;
+    height: 400px;
+}
+
+.blog-image {
+   background: white url("/images/site/home/malawi_instructor.jpg") no-repeat top center;
+   background-size: cover;
+   min-height: 500px; 
+}
+    .section-content {
+        padding: 2rem 5rem;
+    }
+
+    .explore-video-en {
+        padding: 1rem 3rem;
+    }
+    .explore-video-es {
+        padding: 1rem 5rem;
+    }
+    .explore-news-text-en {
+        padding: 1rem 5rem;
+    }
+    .explore-news-text-es {
+        padding: 1rem 5rem;
+    }
+    .explore-news-video-en {
+        padding: 1rem 5rem;
+    }
+    .explore-news-video-es {
+        padding: 1rem 5rem;
+    }
+section.home-testimonial {
+    background-color: #f1f1f1;
+    padding: 2rem 0;
+}
+section.home-testimonial-2 {
+    background-color: #f1f1f1;
+    padding: 4rem 2rem 0;
+}
+
+section.home-news {
+    background-color: #F5F0FF;
+}
+
+    .explore-news-text-en .embed-responsive.embed-responsive-16by9 {
+        font-size: 2rem;
+        font-weight: 300;
+        color: #333333;
+        display: table-cell;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+section.home-donate {
+    background: url("/images/site/home/home-difference.jpg");
+    background-size: cover;
+    height: 400px;
+}
+
+    section.home-donate .btn-donate {
+        white-space: initial;
+        text-transform: uppercase;
+    }
+
+/* mobile device overrides */
+@media (max-width:991px){
+    .home-jumbotron-es {
+     /*   background-color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        height: 100%;
+        min-height: 400px; */
+    }
+            .home-jumbotron__text-en {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-align: center;
+        }
+            .home-jumbotron__text-es {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-align: center;
+        }
+        .home-jumbotron__text-es p {        
+              background-color: rgba(65, 176, 226, 0.9);
+              display: flex;
+              padding: 1rem 1.5rem;
+          }        
+    section.home-donate,
+    section.home-welcome-en {
+          background: white;
+          height: 100%;
+          
+    }
+    
+        section.home-welcome-es {
+         /* background-image:linear-gradient(
+            rgba(255, 255, 255, 0.9), 
+            rgba(255, 255, 255, 0.9)
+          ),
+          url("/images/site/home/vlcff_student_male_young_800w.jpg");
+          background-position: right, right bottom; */
+          background: white;
+          height: 100%;
+    }
+    
+    section.home-mission-en {
+        /* background-image:linear-gradient(
+            rgba(255, 255, 255, 0.9), 
+            rgba(255, 255, 255, 0.9)
+          ),
+          url("/images/site/home/home-mission.jpg");
+        background-repeat: no-repeat, no-repeat;
+        background-size: cover, contain;
+        background-position: left, left; */
+        background: #f1f1f1;
+        height: 100%;
+    }
+    section.home-mission-es {
+        /* background-image:linear-gradient(
+            rgba(255, 255, 255, 0.9), 
+            rgba(255, 255, 255, 0.9)
+          ),
+          url("/images/site/home/home-mission.jpg");
+        background-repeat: no-repeat, no-repeat;
+        background-size: cover, contain;
+        background-position: left, left; */
+        background: #f1f1f1;
+        height: 100%;
+    }
+    div.welcome-image {
+        display:none;
+    }
+}
+
+@media (max-width: 575px) {
+    .home-jumbotron-en,
+    .home-jumbotron-es {
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        height: 50px;
+    }
+
+    .home-jumbotron__text-en p {        
+        background-color: transparent;
+        display: inline;
+        padding: 1rem 1.5rem;
+    }
+     .home-jumbotron__text-es {
+        color: white;
+        font-size: 1.0rem;
+        font-weight: 600;
+        text-align: center;
+    }
+  .home-jumbotron__text-es p {        
+        background-color: rgba(65, 176, 226, 0.9);
+        display: flex;
+        padding: 0.5rem 1.5rem;
+    }
+
+}
+.container-fluid {
+    padding: 0;
+}

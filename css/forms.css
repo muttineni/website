@@ -1,0 +1,61 @@
+/*
+** Virtual Learning Community for Faith Formation (VLCFF)
+** Institute for Pastoral Initiatives (IPI)
+** University of Dayton
+** vlcff@udayton.edu
+** http://vlc.udayton.edu/
+*/
+
+/* form elements */
+form
+{
+  display: inline;
+}
+.form-field
+{
+  background: #fff;
+  color: #000;
+  border: 1px solid #999;
+}
+.form-field-error
+{
+  background: #ff9;
+  color: #333;
+  border: 1px solid #999;
+}
+.form-field-required
+{
+  background: #ccf;
+  color: #000;
+  border: 1px solid #999;
+}
+.form-field-disabled
+{
+  background: #ccc;
+  color: #000;
+  border: 1px solid #999;
+}
+.submit-button
+{
+  background: #edeffd;
+  color: #005252;
+  font-weight: bold;
+  font-size: 10px;
+  cursor: pointer;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+.submit-button-disabled
+{
+  background: #eee;
+  color: #999;
+  font-weight: bold;
+  font-size: 10px;
+  cursor: pointer;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+}

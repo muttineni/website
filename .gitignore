@@ -1,0 +1,21 @@
+# Ignore files that start with a dot or underscore
+.*
+_*
+
+# Except, don't ignore .gitignore
+!.gitignore
+
+
+# Ignore the following folders:
+audio/files/
+classes/files/
+images/
+ipi/
+logs/
+video/files/
+misc/
+fm/
+
+
+
+

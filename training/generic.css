@@ -1,0 +1,48 @@
+.navbar {
+	FONT-SIZE: 10pt; COLOR: maroon; FONT-FAMILY: Arial; TEXT-DECORATION: none
+}
+.navbar:hover {
+	COLOR: red
+}
+.lsttitle {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.lsttitle:hover {
+	COLOR: #cc6600
+}
+.header {
+	COLOR: #0000FF;
+	TEXT-DECORATION: none;
+	font-weight : bold;
+	font-size : larger;
+}
+.headline:hover {
+	COLOR: #cc6600
+}
+.byline {
+	COLOR: #666699; TEXT-DECORATION: none
+}
+.article {
+	COLOR: black; TEXT-DECORATION: none
+}
+.article:hover {
+	COLOR: #cc6600
+}
+A {
+	TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff3300
+}
+A.underline {
+	TEXT-DECORATION: underline
+}
+.cent {
+	TEXT-ALIGN: center
+}
+.white {
+	COLOR: white
+}
+P {
+	FONT-FAMILY: Calisto MT
+}

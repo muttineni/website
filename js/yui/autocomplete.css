@@ -1,0 +1,88 @@
+/*
+Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.5.2
+*/
+.yui-skin-sam .yui-ac {
+position:relative;
+font-family:arial;
+font-size:80%;
+}
+
+.yui-skin-sam .yui-ac-input {
+position:absolute;
+width:100%;
+}
+
+.yui-skin-sam .yui-ac-container {
+position:absolute;
+top:1.6em;
+width:100%;
+}
+
+.yui-skin-sam .yui-ac-content {
+position:absolute;
+width:100%;
+border:1px solid gray;
+background:#fff;
+overflow:hidden;
+z-index:9050;
+}
+
+.yui-skin-sam .yui-ac-shadow {
+position:absolute;
+width:100%;
+background:#000;
+-moz-opacity:0.10;
+opacity:.10;
+filter:alpha(opacity=10);
+z-index:9049;
+margin:.3em;
+}
+
+.yui-skin-sam .yui-ac-content ul {
+width:100%;
+margin:0;
+padding:0;
+}
+
+.yui-skin-sam .yui-ac-content li {
+cursor:default;
+white-space:nowrap;
+margin:0;
+padding:2px 5px;
+}
+
+.yui-skin-sam .yui-ac-content li.yui-ac-prehighlight {
+background:#B3D4FF;
+}
+
+.yui-skin-sam .yui-ac-content li.yui-ac-highlight {
+background:#426FD9;
+color:#FFF;
+}
+
+.autocomplete {
+padding-bottom:2em;
+width:80%;
+}
+
+.autocomplete .yui-ac-highlight .result-id,
+.autocomplete .yui-ac-highlight .result,
+.autocomplete .yui-ac-highlight .result-match {
+color:#FFF;
+}
+
+.autocomplete .result-id {
+float:right;
+}
+
+.autocomplete .result {
+color:#000;
+}
+
+.autocomplete .result-match {
+color:#000;
+font-weight:bold;
+}

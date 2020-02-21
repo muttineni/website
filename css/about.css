@@ -1,0 +1,14 @@
+.container.about-content {
+    margin-bottom: 5rem;
+}
+    .container.about-content .row {
+        margin-top: 3rem;
+    }
+    
+div.img-container {
+    padding: 2rem 3rem;
+}
+
+    div.img-container img {
+        width: 85%;
+    }

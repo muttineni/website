@@ -1,0 +1,5 @@
+<?php
+$footer = '';
+return $footer;
+?>
+

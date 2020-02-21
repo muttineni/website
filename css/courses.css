@@ -1,0 +1,63 @@
+div.address-block {
+    background-color: #f1f1f1;
+    text-align: center;
+    width: 70%;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.course-detail {
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 3px solid #f1f1f1;
+}
+    .course-detail:last-child {
+        border-bottom: none;
+    }
+
+/* facilitator pageview styles */
+.facilitator-img {
+    padding: 12px;
+    background-color: #f1f1f1;
+    border: 1px solid #cccccc;
+    margin: 0 2rem 0.5rem 0;
+}
+
+.facilitator-content {
+    min-height: 300px;
+}
+
+/* Course Catalog styles */
+/* reset ul styles */
+.catalog ul {
+    list-style: none;
+    padding: 0;
+}
+
+.catalog li.li-head h4 {
+    font-size: 1.2rem;
+    background-color: #d3ecf8;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+    .catalog li.li-head h4 a {
+        color: #17719b;
+    }
+        .catalog li.li-head h4 a:hover,
+        .catalog li.li-head h4 a:focus,
+        .catalog li.li-head h4 a:active {
+            color: #0d4159;
+        }
+
+.catalog li.track-head li.level-head h4 {
+    background-color: #f1f1f1;
+}
+
+.catalog li.course-item {
+    border-radius: 0;
+    border: 1px solid #f1f1f1;
+    padding: 12px;
+}
+    .catalog li.list-group-item a{
+        color: #41B0E2;
+    }

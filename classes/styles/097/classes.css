@@ -1,0 +1,525 @@
+/*
+** Virtual Learning Community for Faith Formation (VLCFF)
+** Institute for Pastoral Initiatives (IPI)
+** University of Dayton
+** Richard.Drabik@notes.udayton.edu
+** http://www.udayton.edu/~vlc/
+*/
+
+/*
+** import form-related stylesheet (for standards compliant browsers only)
+*/
+@import 'forms.css';
+
+/*
+** body - default settings
+*/
+body
+{
+  background: #fff;
+  color: #000;
+  padding: 0px;
+  margin: 0px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+}
+/*
+** main table - the entire page is in one giant table (<table class="main">)
+*/
+table.main
+{
+  background: #fff;
+  color: #000;
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+}
+/*
+** tables within the content section of the page
+** some pages have tables in the content section of the page (such as discussion boards and vlc-mail)
+** the background color of these tables matches the overall background color of the page (see "body" and "table.main" above)
+** the table cell (td) background color is different to show the lines between table cells
+*/
+table
+{
+  background: #000000;
+  color: #000;
+  width: 100%;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+}
+td
+{
+  background: #eee;
+  padding: 5px;
+  margin: 5px;
+}
+/*
+** elements contained within tables
+** any html elements that are inside of a table with a colored background (such as on a discussion board or vlc-mail page)
+** will have the "table-background" class (<p class="table-background">)
+** the "table-background" class should have the same background color as the "td" listed above
+*/
+td.table-background, ul.table-background, ol.table-background, li.table-background, h1.table-background, h2.table-background, h3.table-background, a.table-background:link, a.table-background:visited, a.table-background:hover, a.table-background:visited:hover
+{
+  background: #eee;
+}
+p.table-background
+{
+  background: #eee;
+  text-indent: 0px;
+}
+/* the "alternate-row" class is used to alternate row colors on the discussion board pages */
+td.alternate-row, ul.alternate-row, ol.alternate-row, li.alternate-row, h1.alternate-row, h2.alternate-row, h3.alternate-row, a.alternate-row:link, a.alternate-row:visited, a.alternate-row:hover, a.alternate-row:visited:hover
+{
+  background: #ddd;
+}
+p.alternate-row
+{
+  background: #ddd;
+  text-indent: 0px;
+}
+/* table header cells - background color should match "table-background" class above */
+th
+{
+  background: #eee;
+  color: #000;
+  border: 1px solid #07238d;
+}
+/*
+** general html elements
+** the background color for the general html elements below should
+** match the overall background color of the page (see "body" and "table.main" above)
+*/
+img
+{
+  background: #fff;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+p
+{
+  background: #fff;
+  text-align: justify;
+  text-indent: 20px;
+  padding: 5px;
+  margin: 5px;
+}
+p.center
+{
+  text-align: center;
+}
+h1
+{
+  background: #fff;
+  color: #004000;
+  font-size: 24px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+h2
+{
+  background: #fff;
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+h3
+{
+  background: #fff;
+  color: #000;
+  font-size: 18px;
+  padding: 5px;
+  margin: 5px;
+}
+ol, ul
+{
+  background: #fff;
+  text-align: left;
+}
+li
+{
+  background: #fff;
+  padding: 2px;
+}
+blockquote
+{
+  background: #fff;
+  font-style: italic;
+  color: #3b0303;
+}
+dt
+{
+  background: #fff;
+  padding: 5px;
+}
+dd
+{
+  background: #fff;
+  text-align: justify;
+  padding: 5px;
+}
+/* horizontal rule (below the title of each page in the classes site) */
+hr
+{
+  background: #07238d;
+  color: #D9967B;
+  height: 3px;
+}
+/*
+** links
+** the background color for links should match the overall
+** background color of the page (see "body" and "table.main" above)
+** the color of the text for links can be set here
+*/
+a:link, a:visited
+{
+  background: #fff;
+  color: #07238d;
+  font-weight: bold;
+}
+a:hover, a:visited:hover
+{
+  background: #fff;
+  text-decoration: none;
+}
+/*
+** page header (course title)
+** the "course-title" class applies to the top row which contains the course title
+** "td.course-title" and "span.course-title" should have the same background color
+*/
+td.course-title
+{
+  background: #A78077;
+  text-align: center;
+  height: 40px;
+  padding: 0px;
+  margin: 0px;
+}
+span.course-title
+{
+  background: #A78077;
+  color: #FAF7F6;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 2px;
+  margin: 2px;
+}
+/*
+** date and time text
+** the "date-time" class applies to the second row from the top which contains the date
+** "td.date-time" and "span.date-time" should have the same background color
+*/
+td.date-time
+{
+  background: #CAB7B2;
+  text-align: right;
+  height: 25px;
+  padding: 0px;
+  margin: 0px;
+}
+span.date-time
+{
+  background: #CAB7B2;
+  color: #281604;
+  font-size: 11px;
+  padding: 2px;
+  margin: 2px;
+}
+/*
+** top menu
+** the "top-menu" and "top-menu-selected" classes apply to the third row from the top which contains the top menu
+** "top-menu" classes should have the same background color and the "top-menu-selected" classes should have the same background color
+** "top-menu-selected" sets the colors for hovering over the menu links
+*/
+td.top-menu
+{
+  background: #ECE1DE;
+  text-align: center;
+  height: 25px;
+  padding: 0px;
+  margin: 0px;
+}
+span.top-menu
+{
+  background: #ECE1DE;
+  text-align: center;
+  padding: 2px;
+  margin: 2px;
+  width: 100px;
+  height: 15px;
+  border: 1px solid #ECE1DE;
+  cursor: pointer;
+}
+td.top-menu span.top-menu a.top-menu
+{
+  background: #ECE1DE;
+  color: #3A2F2C;
+  font-size: 11px;
+}
+span.top-menu-selected
+{
+  background: #80493C;
+  text-align: center;
+  padding: 2px;
+  margin: 2px;
+  width: 100px;
+  height: 15px;
+  border: 1px solid #E2CCB6;
+  cursor: pointer;
+}
+td.top-menu span.top-menu-selected a.top-menu-selected
+{
+  background: #80493C;
+  color: #ECE1DE;
+  font-size: 11px;
+  text-decoration: none;
+}
+/*
+** link trail and printable link table
+** the "link-trail" class applies to the text and links on the left side of the fourth row from the top
+** the "print-link" class applies to the link to a "printer-friendly" page on the right side of the fourth row from the top
+*/
+td.link-trail-print-link
+{
+  background: #cceeaa;
+  height: 25px;
+  padding: 0px;
+  margin: 0px;
+}
+/*
+** link trail
+*/
+td.link-trail
+{
+  background: #F6EBE6;
+  height: 25px;
+  padding: 0px;
+  margin: 0px;
+}
+td.link-trail span.link-trail
+{
+  background: #F6EBE6;
+  color: #000;
+  font-size: 11px;
+  padding: 2px;
+  margin: 2px;
+}
+td.link-trail span.link-trail a.link-trail
+{
+  background: #F6EBE6;
+  color: #402408;
+  font-size: 11px;
+}
+/*
+** link to printable page
+*/
+td.print-link
+{
+  background: #F6EBE6;
+  text-align: right;
+  height: 25px;
+  padding: 0px;
+  margin: 0px;
+}
+td.print-link span.print-link
+{
+  background: #F6EBE6;
+  padding: 2px;
+  margin: 2px;
+}
+td.print-link span.print-link a.print-link
+{
+  background: #F6EBE6;
+  color: #402408;
+  font-size: 11px;
+}
+/*
+** left menu
+** the "left-menu" class applies to the menu that lists the sessions for the course
+** the "left-sub-menu" class applies to the sub menu that lists all of the resources for the current session
+** colors vary for hover and selected values
+*/
+td.left-menu
+{
+  background: #FDE5CD;
+  width: 200px;
+  vertical-align: top;
+  padding: 0px;
+  margin: 0px;
+}
+div.left-menu
+{
+  background: #FDE5CD;  padding: 5px;
+margin: 5px;
+  border: 1px solid #FDE5CD;
+  cursor: pointer;
+}
+div.left-menu a.left-menu
+{
+  background: #FDE5CD;
+  color: #371A03;
+  font-size: 11px;
+}
+div.left-menu-hover
+{
+  background: #FCE1D6;  padding: 5px;
+margin: 5px;
+  border: 1px solid #371A03;
+  cursor: pointer;
+}
+div.left-menu-hover a.left-menu-hover
+{
+  background: #FCE1D6;
+  color: #371A03;
+  font-size: 11px;
+  text-decoration: none;
+}
+div.left-menu-selected
+{
+  background:#FCE1D6;  padding: 5px;
+margin: 5px;
+  border: 1px solid #000;
+}
+div.left-menu-selected a.left-menu-selected
+{
+  background: #FCE1D6;
+  color: #371A03;
+  font-size: 11px;
+}
+div.left-menu-selected div.left-sub-menu
+{
+  background: #FCE1D6;   padding: 2px;
+margin: 2px;
+  border: 1px dashed #371A03;
+  cursor: pointer;
+}
+div.left-menu-selected div.left-sub-menu a.left-sub-menu
+{
+  background: #FCE1D6;
+  color: #371A03;
+  font-size: 11px;
+  font-weight: normal;
+}
+div.left-menu-selected div.left-sub-menu-selected
+{
+  background: #F5EEE7;   padding: 2px;
+margin: 2px;
+  border: 1px dashed #aaa;
+  cursor: pointer;
+}
+div.left-menu-selected div.left-sub-menu-selected a.left-sub-menu-selected
+{
+  background: #F5EEE7;
+  color: #07238d;
+  font-size: 11px;
+  font-weight: normal;
+  text-decoration: none;
+}
+/*
+** vertical bar (between left menu and main content)
+*/
+td.vertical-bar
+{
+  background: #D9967B;
+  width: 10px;
+  padding: 0px;
+  margin: 0px;
+}
+/*
+** main content
+*/
+td.main-content
+{
+  background: #fff;
+  width: 100%;
+  vertical-align: top;
+  padding: 5px;
+  margin: 0px;
+}
+/*
+** required form fields
+*/
+span.required
+{
+  background: #fff;
+  color: #c00;
+  font-weight: bold;
+}
+/*
+** next/previous links for articles
+*/
+div.next-prev
+{
+  background: #eee;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  border: 1px dashed #ddd;
+}
+a.next-prev:link, a.next-prev:hover, a.next-prev:visited, a.next-prev:visited:hover
+{
+  background: #eee;
+}
+/*
+** error message text
+*/
+div.error
+{
+  background: #c00;
+  color: #fff;
+  text-align: center;
+  width: 400px;
+  border: 1px solid #000;
+  padding: 5px;
+  margin: 0px;
+}
+div.error p, div.error ol, div.error ul, div.error li, div.error a:link, div.error a:hover, div.error a:visited, div.error a:visited:hover
+{
+  background: #c00;
+  color: #fff;
+}
+/*
+** success message text
+*/
+div.success
+{
+  background: #ff0;
+  color: #130076;
+  text-align: center;
+  width: 400px;
+  border: 1px solid #3b0303;
+  padding: 5px;
+  margin: 0px;
+}
+div.success p, div.success a:link, div.success a:hover, div.success a:visited, div.success a:visited:hover
+{
+  background: #ff0;
+  color: #130076;
+  font-weight: bold;
+}
+/*
+** debugging variables (in footer)
+*/
+div.debug
+{
+  background: #fff;
+  color: #000;
+  font-family: monospace;
+  border: 1px solid #c00;
+  padding: 5px;
+  margin: 5px;
+}
+
